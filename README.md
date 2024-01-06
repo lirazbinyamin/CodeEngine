@@ -16,24 +16,27 @@ Then, creates an '.am' file with all macros spreaded, scans the file (twice) to 
 * Entries file: details of each symbol which defined entry symbol.
 <h3> Files in project </h3>
 
- * assembler.c - main file starting the assembly process
- * pre_assembler.c - handles all pre-assembler process
- * first_second_pass.c - handles first and second passes on file
- * symbols.c - handles all symbol work
- * utils.c - contains helper functions used in all other files
- * errors.c - contains error functions
- * code.c - handles machine code
- * create_file.c - create all output files after second pass
- * globals.c - contains all global variables used in program
+ * assembler.c - main file starts the assembly process.
+ * pre_assembler.c - handles all pre-assembler process.
+ * first_second_pass.c - handles first and second passes on file.
+ * symbols.c - handles all symbols work.
+ * utils.c - contains helper functions used in all other files.
+ * errors.c - contains error functions.
+ * code.c - handles machine code.
+ * create_file.c - creates all output files after second pass.
+ * globals.c - contains all global variables used in program.
  
 <h4> Instructions to run program </h4>
 
  * Open terminal and type "make", then press Enter.
 
  * Type "./assembler" adding '.as' file/s name you want to us, then press Enter.
- 
- for example: "./assembler test1 test2 test3 test4 error1 error2".
 
+Here's an example command for assembling multiple files:
+
+```console
+./assembler test1 test2 test3 test4 error1 error2
+```
 <h5> Printings to the screen </h5>
  
 * Print macro table: use printMacroTable defined in pre_assembler.h.
