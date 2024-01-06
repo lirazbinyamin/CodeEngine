@@ -1,11 +1,21 @@
-# Assembler
-/*Project goal: Build an assembler for an assembly language provided in MAMAN 14.
- *
- * This program gets an '.as' file -> scan it for macros and spread them -> create an '.am' file with macros spread ->
- * -> scan file (first&second passes) to realize commands and data from assembly and check for any errors ->
- * -> convert all the content to binary machine code -> create output files for content.
- *
- * Files in project:
+<h1> Assembler  </h1>
+
+Final Project in the course System Programming Lab by the Open University of Israel. The purpose of this project is to build an assembler for 16-instruction assembly language, for an imaginary 12-bit CPU with 12-bit & 256 words memory size. 
+
+Author: Liraz Binyamin
+
+Grade: 100
+
+<h2> Program Description  </h2>
+This program gets an '.as' file, scan it for macros and organize them in a macro table.
+
+Then, creates an '.am' file with all macros spreaded, scans the file (twice) to realize commands and data from assembly and checks for any errors. Afterwards, it converts all the content to binary machine code and create 3 output files: 
+
+* Object file: the am. file transferred to machine code. 
+* Externals file: details of addresses in the machine code where the is an information word coding a value of a symbol which defined external symbol.
+* Entries file: details of each symbol which defined entry symbol.
+<h3> Files in project </h3>
+
  * assembler.c - main file starting the assembly process
  * pre_assembler.c - handles all pre-assembler process
  * first_second_pass.c - handles first and second passes on file
@@ -15,16 +25,26 @@
  * code.c - handles machine code
  * create_file.c - create all output files after second pass
  * globals.c - contains all global variables used in program
- *
- * Instructions:
- * 1- Open terminal and type "make", then press Enter.
- * 2- Type "./assembler" adding '.as' file/s name you want to us,then press Enter.
- * for example: "./assembler test1 test2 test3 test4 error1 error2".
- * 3- If you want to print macro table: use printMacroTable defined in pre_assembler.h.
- * 4- If you want to print symbol table: use printSymbolTable defined in symbols.h.
- * 5- If you want to print binary machine code representation: use printBinaryLines defined in create_files.h.
- * 6- All descriptions for functions used in each file - located in file header.
- *
- * ENJOY!
- *
- * Author: Liraz Binyamin*/
+ 
+<h4> Instructions to run program </h4>
+
+ * Open terminal and type "make", then press Enter.
+
+ * Type "./assembler" adding '.as' file/s name you want to us, then press Enter.
+ 
+ for example: "./assembler test1 test2 test3 test4 error1 error2".
+
+<h5> Printings to the screen </h5>
+ 
+* Print macro table: use printMacroTable defined in pre_assembler.h.
+ 
+* Print symbol table: use printSymbolTable defined in symbols.h.
+ 
+* Print binary machine code representation: use printBinaryLines defined in create_files.h.
+
+
+* All descriptions for functions used in each file are located in file's header.
+
+ENJOY!
+
+ 
