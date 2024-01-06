@@ -1,0 +1,6 @@
+MAIN: mov @r3 ,LENGTH
+@r4: mov @r3 ,LENGTH
+mov: mov @r3 ,LENGTH
+1MAIN: mov @r3 ,LENGTH
+MA$IN: mov @r3 ,LENGTH
+

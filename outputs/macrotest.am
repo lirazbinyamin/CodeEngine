@@ -1,0 +1,11 @@
+
+
+
+
+sub @r1, @r4
+    prn 5
+
+prn -5
+
+inc @r2
+mov @r5,@r1
