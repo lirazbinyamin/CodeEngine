@@ -35,7 +35,7 @@ Then, creates an '.am' file with all macros spreaded, scans the file (twice) to 
 Here's an example command for assembling multiple files:
 
 ```console
-./assembler test1 test2 test3 test4 error1 error2
+./assembler test1 test2 test3 error1 error2
 ```
 <h5> Printings to the screen </h5>
  
