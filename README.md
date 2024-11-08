@@ -20,11 +20,11 @@ Then, creates an '.am' file with all macros spreaded, scans the file (twice) to 
  * pre_assembler.c - handles all pre-assembler process.
  * first_second_pass.c - handles first and second passes on file.
  * symbols.c - handles all symbols work.
- * utils.c - contains helper functions used in all other files.
- * errors.c - contains error functions.
+ * utils.c - includes helper functions used in all other files.
+ * errors.c - includes error functions.
  * code.c - handles machine code.
  * create_file.c - creates all output files after second pass.
- * globals.c - contains all global variables used in program.
+ * globals.c - includes all global variables used in program.
  
 <h4> Instructions to run program </h4>
 
