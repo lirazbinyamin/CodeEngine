@@ -1,10 +1,8 @@
 <h1> Assembler  </h1>
 
-Final Project in the course System Programming Lab by the Open University of Israel. The purpose of this project is to build an assembler for 16-instruction assembly language, for an imaginary 12-bit CPU with 12-bit & 256 words memory size. 
+The purpose of this project is to build an assembler for 16-instruction assembly language, for an imaginary 12-bit CPU with 12-bit & 256 words memory size. 
 
 Author: Liraz Binyamin
-
-Grade: 100
 
 <h2> Program Description  </h2>
 This program gets an '.as' file, scan it for macros and organize them in a macro table.
