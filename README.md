@@ -1,4 +1,4 @@
-<h1> Assembler  </h1>
+<h1> CodeEngine  </h1>
 
 The purpose of this project is to build an assembler for 16-instruction assembly language, for an imaginary 12-bit CPU with 12-bit & 256 words memory size. 
 
